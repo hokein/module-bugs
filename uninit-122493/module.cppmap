@@ -1,0 +1,25 @@
+module "strings2" {
+  export *
+  module "string_view2.h" {
+    export *
+    header "string_view2.h"
+  }
+}
+
+module "mock_resolver" {
+  export *
+  module "mock_resolver.h" {
+    export *
+    header "mock_resolver.h"
+  }
+  use "strings2"
+}
+
+module "sql_internal" {
+  export *
+  module "sql_transform_builder.h" {
+    export *
+    header "sql_transform_builder.h"
+  }
+}
+
