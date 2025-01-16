@@ -5,12 +5,12 @@
 class QualifyingSet3 {
  public:
   void GetIndexes() const {
-    vox::bitset::ForEachSetBit2([](int i) {});
+    vox::bitset::ForEachSetBit2([]() {});
   }
 };
 
 template <typename T>
 void DoTransform() {
-  vox::bitset::ForEachSetBit2([&](int i) {});
+  vox::bitset::ForEachSetBit2([&]() {});
 }
 

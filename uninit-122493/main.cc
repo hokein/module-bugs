@@ -4,7 +4,7 @@
 namespace {
 
 void test() {
-  LazyStaticPtr23<int>().get();
+  get<int>();
   DoTransform<int>();
 }
 
