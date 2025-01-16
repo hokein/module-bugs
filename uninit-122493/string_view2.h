@@ -1,17 +1,9 @@
 #pragma once
 
-template <typename T>
-struct remove_ref {
-  using type = T;
-};
-template <typename T>
-struct remove_ref<T&> {
-  using type = T;
-};
 
 template <typename T>
-T&& fwd(typename remove_ref<T>::type& x) {
-  return static_cast<T&&>(x);
+const T& fwd(const T& x) {
+  return x;
 }
 
 namespace vox::bitset {
