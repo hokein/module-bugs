@@ -11,6 +11,6 @@ class QualifyingSet3 {
 
 template <typename T>
 void DoTransform() {
-  vox::bitset::ForEachSetBit2([&]() {});
+  vox::bitset::ForEachSetBit2([]() {});
 }
 

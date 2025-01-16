@@ -5,6 +5,11 @@
 namespace vox::bitset {
 
 template <typename TFunc>
+void ForEachWord2(const TFunc& func) {
+  fwd<TFunc>(func);
+}
+
+template <typename TFunc>
 void ForEachSetBit2(const TFunc& func) {
   ForEachWord2([](int) {
     const int bit_index_base = 0;
