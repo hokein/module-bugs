@@ -1,0 +1,4 @@
+module "bar" {
+  export *
+  header "util/c9/co.h"
+}

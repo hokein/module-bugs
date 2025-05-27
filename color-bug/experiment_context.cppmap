@@ -1,0 +1,7 @@
+module "experiment_context" {
+  export *
+  header "util/c9/lazy.h"
+
+  // use "foo"
+  use "bar"
+}
